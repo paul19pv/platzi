@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="{% static "bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "bootstrap/css/local.min.css" %}" rel="stylesheet">
+    <title>{% block page_title %}{% endblock %}</title>
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body>
+
+      {% include "navbar.html" %}
+
+
+      <div class="container">
+        {%block content%}
+        {%endblock%}
+      </div>
+
+      {% include "footer.html" %}
+
+  </body>
+</html>

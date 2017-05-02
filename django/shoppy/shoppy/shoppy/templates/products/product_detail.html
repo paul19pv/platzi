@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block title%}Detalle de Producto{%endblock%}
+{% block content %}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{product.name}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="" style="float:left; width:200px;">
+      <p>
+        {{product.description}}<br>
+        {{product.category}}<br>
+        {{product.price}}
+
+      </p>
+    </div>
+    <img src="{{product.image.url}}" alt="" class="img-responsive img-thumbnail">
+
+  </div>
+</div>
+{%endblock%}

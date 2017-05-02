@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrapform',
     'clients.apps.ClientsConfig',
     'products.apps.ProductsConfig',
     'django.contrib.admin',
